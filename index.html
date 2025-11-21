@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OrthoBalance - Orthomoleculaire Therapie</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              serif: ['Playfair Display', 'serif'],
+            },
+            colors: {
+              // Palette Mappings
+              white: '#FFFFFF',
+              black: '#1D1D1B',
+              stone: {
+                50: '#FCF9F2',  // Achtergrond body/sections
+                100: '#FCF9F2', 
+                200: '#D8CCAB', // Borders / Accent 1
+                300: '#D8CCAB',
+                400: '#757575',
+                500: '#757575',
+                600: '#757575', // Gewone tekst
+                700: '#757575',
+                800: '#1D1D1B',
+                900: '#1D1D1B', // Headings
+                950: '#1D1D1B',
+              },
+              primary: {
+                DEFAULT: '#9CAAC6', // Accent 2 (Primary)
+                dark: '#8A98B0',    // Hover
+              },
+              secondary: {
+                DEFAULT: '#D8CCAB', // Accent 1 (Secondary)
+                dark: '#C8BC9B'
+              },
+              brand: {
+                dark: '#9CAAC6',    // Mapped to Accent 2
+                accent: '#D8CCAB'   // Mapped to Accent 1
+              },
+              // Shadcn UI specific colors mappings
+              border: "hsl(var(--border))",
+              input: "#E5E7EB", // subtle border
+              ring: "#9CAAC6", // Focus ring
+              background: "#FCF9F2",
+              foreground: "#1D1D1B",
+              muted: {
+                DEFAULT: "#F5F5F5",
+                foreground: "#757575",
+              },
+              destructive: {
+                DEFAULT: "hsl(var(--destructive))",
+                foreground: "hsl(var(--destructive-foreground))",
+              },
+            },
+            borderRadius: {
+              lg: "var(--radius)",
+              md: "calc(var(--radius) - 2px)",
+              sm: "calc(var(--radius) - 4px)",
+            },
+            boxShadow: {
+              // Enforce soft shadows everywhere
+              sm: '0 2px 8px rgba(0,0,0,0.04)',
+              DEFAULT: '0 4px 12px rgba(0,0,0,0.06)',
+              md: '0 4px 12px rgba(0,0,0,0.06)',
+              lg: '0 8px 24px rgba(0,0,0,0.06)',
+              xl: '0 12px 32px rgba(0,0,0,0.06)',
+              '2xl': '0 16px 40px rgba(0,0,0,0.06)',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      html { scroll-behavior: smooth; }
+      :root {
+        --radius: 0.5rem;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^11.0.0",
+    "react-hook-form": "https://esm.sh/react-hook-form@7.51.0?external=react,react-dom",
+    "clsx": "https://esm.sh/clsx@2.1.0",
+    "tailwind-merge": "https://esm.sh/tailwind-merge@2.2.1"
+  }
+}
+</script>
+</head>
+  <body class="bg-stone-50 text-stone-600 antialiased">
+    <div id="root"></div>
+  </body>
+</html>
